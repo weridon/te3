@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+        <link type="image/x-icon" href="img/tubiao.ico" rel="shortcut icon">
+  	<title>邻居的耳朵|有观点的聆听</title>
+</head>
+<body onload="autoStart()">
+	<div class="quan">
+	    <div class="header-col">
+	        <div class="header">
+			 <a href="#"> <img src="img/newhead.jpg" alt="邻居的耳朵"/></a>
+	        </div>
+	    </div>
+	    <div class="navigation">
+		<div class="page-nav">
+			<ul class="nav">
+				    <li class="page_item1"><a href="#">首页</a></li>
+				    <li class="page_item2"><a href="#">有声电台</a></li>
+				    <li class="page_item2"><a href="#">排行榜</a></li>
+				    <li class="page_item2"><a href="#">音乐墙</a></li>
+				    <li class="page_item2"><a href="">音乐仓库</a></li>
+				    <li class="page_item2"><a href="">作者专栏</a></li>
+				    <li class="page_item2"><a href="#">关于我们</a></li>				
+			</ul>
+			<div class="mit">
+                <form name="f1" action="http://www.baidu.com/baidu" id="searchform">
+                    <div>
+                        <input type="text" class="word" value="搜索" onfocus="if (this.value == '搜索') {this.value = '';}" onblur="if (this.value == '') {this.value = '搜索';}">
+                        <input type="image" class="se" src="img/ico-search.png""百度搜索"/>
+                    </div>
+                </form>
+               
+            </div>
+	          </div>
+
+		        <div class="cat-nav">
+				<ul class="secnav">
+					<li><a href="#">乐评</a></li>
+					<li><a href="#">原声</a></li>
+				        <li><a href="#">古典</a></li>
+				        <li><a href="#">影评</a></li>
+				        <li><a href="#">摇滚</a></li>
+				        <li><a href="#">故事</a></li>
+				        <li><a href="#">新世纪</a></li>
+				        <li><a href="#">民谣</a></li>
+				        <li><a href="#">流行</a></li>
+				        <li><a href="#">游记</a></li>
+				        <li><a href="#">爵士</a></li>
+				        <li><a href="#">独立</a></li>
+				        <li><a href="#">电子</a></li>
+				        <li><a href="#">精品推荐</a></li>
+				</ul>
+		        </div>
+	    </div>
+
+
+        <div id="all">
+
+	     <div class="col-left">
+            <div class="foncus">
+            <div onmouseover="autoStop()" onmouseout="autoStart()">
+                <ul id="focus-nav" onmouseover="move()">
+                <li>
+                    <a href="http://ear.duomi.com/?p=300810">
+                        <p>此心安处即吾乡</p>
+                    </a>
+                </li>
+                <li> 
+                    <a href="http://ear.duomi.com/?p=300810">
+                        <p>the fault in our star</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ear.duomi.com/?p=300810">
+                        <p>【沙粒FM】遇见后告别</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ear.duomi.com/?p=300810">
+                        <p>一个故事</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ear.duomi.com/?p=300810">
+                        <p>我怀念的</p>
+                    </a>
+                </li>
+                </ul>
+           </div>
+           <div>
+                <div id="focus-cont"  onmouseover="arrmove()" onmouseout="arrout()">
+                    <ul>
+                        <li>
+                            <a href="http://ear.duomi.com/?p=300810" >
+                                <img src="img/11.jpg"/>
+                           </a>
+                        </li>
+                         <li>
+                            <a href="http://ear.duomi.com/?p=300810" >
+                                <img src="img/22.jpg"/>
+                           </a>
+                        </li>
+                         <li>
+                            <a href="http://ear.duomi.com/?p=300810" >
+                                <img src="img/33.jpg"/>
+                           </a>
+                        </li>
+                         <li>
+                            <a href="http://ear.duomi.com/?p=300810" >
+                                <img src="img/44.jpg"/>
+                           </a>
+                        </li>
+                         <li>
+                            <a href="http://ear.duomi.com/?p=300810" >
+                                <img src="img/55.jpg"/>
+                           </a>
+                        </li>
+                        
+                    </ul>
+                    <div id="arrlr" onmouseover="autoStop()" onmouseout="autoStart()">
+                        <a class="arr_left"  onclick="chang()"></a>
+                        <a class="arr_right"  onclick="change()"></a>
+                    </div>
+                </div>
+           </div>
+    
+        </div>
+     
+        <div class="box">
+                        <div class="post">
+                                <a href="#">
+                                        <img src="img/44.jpg" title="the fault in our star"/>
+                                </a>
+                                <h2 class="title"><a href="#">the fault in our star</a></h2>
+                                <p class="post-meta">
+                                        <img src="img/ico-time.png"/>2014年12月22日
+                                        <img src="img/ico-comment.png"/>53个评论
+                                </p>
+                                <div class="entry">
+                                        <p>我们知道，0和1之间有无数的数字，可以是0.1,0.12,0.112…这么些无限集合蕴含在我的生命里，有什么是不可能的呢？我想的，只要我能一直想，总有一天是会我的。</p>
+                                        <span>
+                                              <a href="#" class="readmore">>>阅读全文及试听</a>
+                                        </span>
+                                </div>
+                        </div>
+                        <div class="post-bottom">
+                           <div class="poleft">
+                                      <img src="img/a.jpg"/>
+                              <a href="#">原声</a>         
+                               </div>
+                                <div class="poright">
+                                      <img src="img/b.jpg"/>
+                                      <a href="#">14th</a>, <a href="#">ed sheeran</a>,<a href="#">电影原声</a>
+                                </div>
+                        </div>
+            </div> 
+
+            	
+	        <div class="box">
+                        <div class="post">
+                                <a href="#">
+                                        <img src="img/0402.jpg" title="感谢那年的得不到"/>
+                                </a>
+                                <h2 class="title">
+                                        <a href="#" title="感谢那年的得不到">感谢那年的得不到</a>
+                                </h2>
+                                <p class="post-meta">
+            	                        <img src="img/ico-time.png"/>2014年11月05日
+            	                        <img src="img/ico-comment.png"/>5个评论
+                                </p>
+                                <div class="entry">
+            	                        <p>以前总是会觉得，自己再努力一下结果会不会不一样，所以我不在乎向你走的是九步九十九步还是九百九十九步，都不会觉得辛苦，只是希望你能够转身回头向我走一步，也许所有的努力都可以改变结果，唯独感情除外吧，强求不得。</p>
+                                        <span>
+                            	                <a href="#" class="readmore">>>阅读全文及试听</a>
+                                        </span>
+                                </div>
+                        </div>
+                        <div class="post-bottom">
+                	        <div class="poleft">
+                                        <img src="img/a.jpg"/>
+                		        <a href="#">流行</a>，<a href="#">故事</a>       	
+                                </div>
+                                <div class="poright">
+                                        <img src="img/b.jpg"/>
+                            	        <a href="#">00s</a>, <a href="#">国语</a>, <a href="#">曹方</a>,<a href="#">民谣</a>
+                                </div>
+                        </div>
+	        </div>
+         
+        
+	        <div class="box">
+                        <div class="post">
+                                <a href="#">
+                                        <img src="img/2.jpg" title="【辛氏电台】当你开始听不清这个世界的声音"/>
+                                </a>
+                                <h2 class="title"><a href="#">【辛氏电台】当你开始听不清这个世界的声音</a></h2>
+                                <p class="post-meta">
+                                        <img src="img/ico-time.png"/>2014年10月21日
+                                        <img src="img/ico-comment.png"/>53个评论
+                                </p>
+                                <div class="entry">
+            	                        <p>我们不得不承认，总有一天，我们会变老的。</p>
+                                        <span>
+                    	                      <a href="#" class="readmore">>>阅读全文及试听</a>
+                    	                </span>
+                                </div>
+                        </div>
+                        <div class="post-bottom">
+                  	       <div class="poleft">
+                                      <img src="img/a.jpg"/>
+                		      <a href="#">流行</a>         
+                               </div>
+                                <div class="poright">
+                                      <img src="img/b.jpg"/>
+                    	              <a href="#">NJ 卢克</a>, <a href="#">辛氏电台</a>,<a href="#">有声电台</a>
+                                </div>
+                        </div>
+	        </div> 
+
+            <div class="box">
+                        <div class="post">
+                                <a href="#"><img src="img/3.jpg" title="【Mr.Salt】死亡"/></a>
+                                <h2 class="title"><a href="#">【Mr.Salt】死亡</a></h2>
+                                <p class="post-meta">
+            	                    <img src="img/ico-time.png"/>2014年11月08日
+            	                    <img src="img/ico-comment.png"/>4个评论
+                                </p>
+                                <div class="entry">
+            	                     <p>时间就这样过去多好，在活人心中，没有死亡。</p>
+                                     <span>
+                                  	 <a href="#" class="readmore">>>阅读全文及试听</a>
+                                     </span>
+                                </div>
+                        </div>
+                        <div class="post-bottom">
+                                <div class="poleft">
+                                        <img src="img/a.jpg"/>
+                		        <a href="#">流行</a>                	
+                                </div>
+                                <div class="poright">
+                                        <img src="img/b.jpg"/>
+                    	                <a href="#">Mr.Salt</a>, <a href="#">NJ 盐先生</a>, <a href="#">一周邻居的耳朵top15</a>,<a href="#">有声电台</a>
+                                </div>
+                        </div>
+	        </div>
+            <div class="box">
+                        <div class="post">
+                                <a href="#">
+                                        <img src="img/55.jpg" title="我怀念的"/>
+                                </a>
+                                <h2 class="title">
+                                        <a href="#" title="我怀念的">我怀念的</a>
+                                </h2>
+                                <p class="post-meta">
+                                        <img src="img/ico-time.png"/>2014年12月11日
+                                        <img src="img/ico-comment.png"/>12个评论
+                                </p>
+                                <div class="entry">
+                                        <p>如果你走我走的路，会不会理解这些年来我的痛。如果你听过我的歌，会不会怪我反复吟唱总是你。</p>
+                                        <span>
+                                                <a href="#" class="readmore">>>阅读全文及试听</a>
+                                        </span>
+                                </div>
+                        </div>
+                        <div class="post-bottom">
+                            <div class="poleft">
+                                        <img src="img/a.jpg"/>
+                                <a href="#">流行</a>，<a href="#">故事</a>           
+                                </div>
+                                <div class="poright">
+                                        <img src="img/b.jpg"/>
+                                        <a href="#">00s</a>, <a href="#">国语</a>, <a href="#">曹方</a>,<a href="#">民谣</a>
+                                </div>
+                        </div>
+            </div>
+	        <div class="box">
+                        <div class="post">
+                                <a href="#"><img src="img/qiutiain.jpg" title="生活总会给你想要的"/></a>
+                                <h2 class="title"><a href="#">生活总会给你想要的</a></h2>
+                                <p class="post-meta">
+            	                      <img src="img/ico-time.png"/>2014年11月17日
+            	                      <img src="img/ico-comment.png"/>4个评论
+                                </p>
+                                <div class="entry">
+            	                     <p>十月的杭州城整整晴了一个多月，有一天突然下起雨来，秋意不期而至防不胜防。我的手脚一下子随之冰凉，连个提前的准备状态也没有。被这突如其来的低温吓破了胆似得，我竟忘记了自己一直喜欢着秋天。</p>
+                                     <span>
+                                  	 <a href="#" class="readmore">>>阅读全文及试听</a>
+                                     </span>
+                                </div>
+                        </div>
+                        <div class="post-bottom">
+                	       <div class="poleft">
+                                   <img src="img/a.jpg"/>
+                		   <a href="#">原声</a>                	
+                                </div>
+                                <div class="poright">
+                                      <img src="img/b.jpg"/>
+                    	              <a href="#">00s</a>, <a href="#">中国</a>, <a href="#">王雁盟top15</a>,<a href="#">钢琴</a>
+                                </div>
+                        </div> 
+	        </div>
+                
+
+                <div class="box">
+                        <div class="post">
+                                <a href="#"><img src="img/2.jpg" title="【辛氏电台】当你开始听不清这个世界的声音"/></a>
+                                <h2 class="title"><a href="#">【辛氏电台】当你开始听不清这个世界的声音</a></h2>
+                                <p class="post-meta">
+                                    <img src="img/ico-time.png"/>2014年10月21日
+                                    <img src="img/ico-comment.png"/>53个评论
+                                </p>
+                                <div class="entry">
+                                    <p>我们不得不承认，总有一天，我们会变老的。</p>
+                                    <span>
+                                        <a href="#" class="readmore">>>阅读全文及试听</a>
+                                    </span>
+                                </div>
+                        </div>
+                        <div class="post-bottom">
+                                <div class="poleft">
+                                     <img src="img/a.jpg"/>
+                                     <a href="#">流行</a>         
+                                </div>
+                                <div class="poright">
+                                     <img src="img/b.jpg"/>
+                                     <a href="#">NJ 卢克</a>, <a href="#">辛氏电台</a>,<a href="#">有声电台</a>
+                                </div>
+                        </div>
+                </div> 
+	     
+
+	        <div class="more">
+	    		<span>Page 1 of 65</span>
+	    		<a href="#">1</a>
+	    		<a href="#">2</a>
+	    		<a href="#">3</a>
+	    		<a href="#">4</a>
+	    		<a href="#">5</a>
+	    		<a href="#">>></a>
+	    		<a href="#">10</a>
+	    		<a href="#">20</a>
+	    		<a href="#">30</a>
+	    		<a href="#">...</a>
+	    		<a href="#">last</a>
+	        </div>	
+	    </div> 
+
+	    <div class="col-right">
+
+       
+		<div class="widget deng"><br/>
+		    <span>&nbsp;</span>
+		    <span>
+		    	<a href="#"><img src="img/denglu.png"/></a><a href="#"><img src="img/tougao.png"/></a>
+		    </span><br/>
+		    <span>
+		    	<a href="#"><img src="img/weibo.png"/></a><a href="#"><img src="img/tieba.png"/></a><a href="#"><img src="img/kongjian.png"/></a>
+		    </span>
+		</div>
+	
+	        <div class="widget">
+		        <h3>本周推荐nj——农药</h3>
+		        <div class="textxidget">
+			    <p>
+				<a href="#">
+					<img src="img/3955.jpg" width="268" height="218" />
+				</a>
+			</p>
+		    </div>
+	    </div>
+
+	        <div class="widget">
+		       <h3>#耳朵这一刻#</h3>
+		       <div class="textxidget">
+			    <p >
+				<a href="#">
+					<img src="img/erduo.png" width="268" height="218" />
+				</a>
+			    </p>
+		        </div>
+                </div>
+        
+
+                <div class="widget">
+                        <h3>热评文章</h3>
+                        <ul>
+                                <li>
+                                        <a href="#">【雪樱の心情】你终于让我不喜欢你了 (51)</a>                 
+                                </li>
+                                <li>
+                                        <a href="#">他不寡言，此刻却如此静默 (32)</a>                   
+                                </li>
+                                <li>
+                                        <a href="#">【悠然广播】最后他们都输给了现实 (28)</a>                  
+                                </li>
+                                <li>
+                                        <a href="#">病 (25)</a>                    
+                                </li>
+                                <li>
+                                        <a href="#">【老女孩】关于孤独这件事 (23)</a>                    
+                                </li>
+                                <li>
+                                        <a href="#">【总结篇】十月，一起去看那漫山的红叶 (20)</a>                    
+                                </li>
+                                <li>
+                                        <a href="#">夜盲 (13)</a>                    
+                                </li>
+                        </ul>
+                </div>   
+                <div class="widget">
+                        <h3>最活跃的用户</h3>
+                    <ul>
+                            <li>
+                            <a href="#">此人刀法怪异（65）</a>                 
+                        </li>
+                        <li>
+                            <a href="#">为安（60）</a>                   
+                        </li>
+                        <li>
+                            <a href="#">秋夜（59）</a>                  
+                        </li>
+                        <li>
+                            <a href="#">聪明的雪人（39）</a>                    
+                        </li>
+                        <li>
+                            <a href="#">十岁（30）</a>                    
+                        </li>
+                        <li>
+                            <a href="#">陌铭（29）</a>                    
+                        </li>
+                        <li>
+                            <a href="#">请叫我二怪（23）</a>                    
+                        </li>
+                        <li>
+                            <a href="#">爱摄影爱旅行爱电影</a> 
+                        </li>                  
+                            
+                       
+                    </ul>
+                </div>
+                <div class="widget ding">
+                       <a href="#">
+                                <img src="img/jingpin.jpg"/>
+                       </a>
+                       <h3>订阅耳朵</h3>
+                       <a href="#">
+                                 <img src="img/douban.jpg"/>
+                       </a>
+                       <a href="#">
+                                 <img src="img/xianguo.jpg"/>
+                      </a>
+                       <a href="#">
+                                 <img src="img/qq.jpg"/>
+                       </a>
+                       <a href="#">
+                                 <img src="img/youdao.jpg"/>
+                       </a>
+               
+        </div>
+                <div class="widget">
+                        <h3>友情链接</h3>
+        	        <ul>
+        	                <li>
+        	         		<a href="#">A8原创音乐网</a>        			
+        	         	</li>
+        	         	<li>
+        	         		<a href="#">DJ紫轩的私人小铺</a>        			
+        	         	</li>
+        	         	<li>
+        	         		<a href="#">hao123-小清新</a>        			
+        	         	</li>
+        	         	<li>
+        	         		<a href="#">乐鼠无牙</a>        			
+        	         	</li>
+        	         	<li>
+        	         		<a href="#">Stephy果果原创手绘</a>        			
+        	         	</li>
+        	         	<li>
+                 			<a href="#">多米音乐</a>        			
+        	         	</li>
+        	         	<li>
+        	         		<a href="#">雪樱心情私家小铺</a>        			
+        	            	</li>
+                                <li>
+        	         		<a href="#">心灵咖啡网</a>        			
+        	            	</li>
+                                <li>
+        	        		<a href="#">精美图片</a>        			
+        	            	</li>
+                       
+        	        </ul>
+                </div>
+
+
+
+
+
+
+	    </div>
+      </div>
+        <div class="footer">
+                <div class="fleft">
+    		        <p>
+    		           	&copy; 2014 邻居的耳朵. All Rights Reserved. 京公网安备110105011876
+    		        </p>
+    	        </div>
+    	        <div class="fright">
+    		        <p>
+    		          	Powered by <a href="#">Wordpress</a>. Designed by <a href="#"><img src="img/woothemes.png"  alt="Woo Themes" /></a>
+    		        </p>
+                </div>
+    	
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+    function ById(id){
+        return document.getElementById(id);
+       }
+      
+    var navs=ById("focus-nav").getElementsByTagName("li");//选项
+    var conts=ById("focus-cont").getElementsByTagName("li");//图片
+    var as=ById("arrlr").getElementsByTagName("a");
+    var index=0;
+
+   // conts[index].style.display="block";
+
+
+    function move(){
+   // clearInterval(timer);
+
+    for(var i=0;i<navs.length;i++){
+        var nav_item=navs[i];
+        nav_item.onmouseover=function (){
+            for(var j=0;j<navs.length;j++){
+                if(navs[j].innerText==this.innerText){
+                    index=j;
+                    break;
+                }
+            }
+            for(var m=0;m<navs.length;m++){
+                conts[m].style.display="none";
+                navs[m].style.background="none";                 
+            }
+            conts[index].style.display="block";
+            navs[index].style.background="#c3c9c3";
+        }
+    }
+}
+    function change(){
+    for(var m=0;m<navs.length;m++){
+        conts[m].style.display="none";
+        navs[m].style.background="none";
+    }
+        if(index==navs.length)
+            index=0;
+        conts[index].style.display="block";
+        navs[index].style.background="#c3c9c3";
+        index++;
+    }
+    change();
+    function chang(){
+        for (var m=0;m<navs.length;m++) {
+            conts[m].style.display="none";
+            navs[m].style.background="none";
+        }
+        for(var j=0;j<navs.length;j++){
+            if (navs[j].innerText==this.innerText){
+                index=j;
+                break;
+            }
+        }
+        if(index>0){
+            index--;
+        }else{
+            index=navs.length-1;
+        }
+        conts[index].style.display="block";
+        navs[index].style.background="#c3c9c3";
+    }
+    chang();
+
+    function autoStart(){
+       timer=setInterval(function(){
+           change();
+       },1000);
+    }
+    function autoStop(){
+        clearInterval(timer);
+    }
+    for(var m=0;m<as.length;m++){
+        as[m].style.display="none";
+    }
+   function arrmove(){
+        for(var m=0;m<as.length;m++){
+        as[m].style.display="block";
+        }
+    }
+     function arrout(){
+        for(var m=0;m<as.length;m++){
+            as[m].style.display="none";
+        }
+    }
+    </script>
+
+ 
+
+
+
+
+  
+</body>
+</html>
