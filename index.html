@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -27,8 +27,8 @@
 			<div class="mit">
                 <form name="f1" action="http://www.baidu.com/baidu" id="searchform">
                     <div>
-                        <input type="text" class="word" value="搜索" onfocus="if (this.value == '搜索') {this.value = '';}" onblur="if (this.value == '') {this.value = '搜索';}">
-                        <input type="image" class="se" src="img/ico-search.png""百度搜索"/>
+                        <input type="text" class="word" id="seach"  value="搜索">
+                        <input type="image" class="se" src="img/ico-search.png"/>
                     </div>
                 </form>
                
@@ -60,8 +60,8 @@
 
 	     <div class="col-left">
             <div class="foncus">
-            <div onmouseover="autoStop()" onmouseout="autoStart()">
-                <ul id="focus-nav" onmouseover="move()">
+            <div onmouseover="autoStop();" onmouseout="autoStart();">
+                <ul id="focus-nav" onmouseover="move();">
                 <li>
                     <a href="http://ear.duomi.com/?p=300810">
                         <p>此心安处即吾乡</p>
@@ -90,7 +90,7 @@
                 </ul>
            </div>
            <div>
-                <div id="focus-cont"  onmouseover="arrmove()" onmouseout="arrout()">
+                <div id="focus-cont"  onmouseover="arrmove();" onmouseout="arrout();">
                     <ul>
                         <li>
                             <a href="http://ear.duomi.com/?p=300810" >
@@ -119,9 +119,9 @@
                         </li>
                         
                     </ul>
-                    <div id="arrlr" onmouseover="autoStop()" onmouseout="autoStart()">
-                        <a class="arr_left"  onclick="chang()"></a>
-                        <a class="arr_right"  onclick="change()"></a>
+                    <div id="arrlr" onmouseover="autoStop();" onmouseout="autoStart();">
+                        <a class="arr_left"  onclick="chang();"></a>
+                        <a class="arr_right"  onclick="change();"></a>
                     </div>
                 </div>
            </div>
@@ -528,8 +528,18 @@
     var as=ById("arrlr").getElementsByTagName("a");
     var index=0;
 
-   // conts[index].style.display="block";
-
+    var seach=ById("seach");
+    var onoff=true;
+    seach.onfocus=function (){
+         if (onoff){
+              this.value = '';onoff=false;
+        }
+      }
+      seach.onblur=function(){
+          if(this.value==''){
+              this.value="搜索"; onoff=true;
+        }
+     }
 
     function move(){
    // clearInterval(timer);
